@@ -101,6 +101,7 @@
 .contact-list-select select{
   height: 16px;
   width: 107px;
+  margin-right: 18px;
   font-size: 12px;
   font-family: Helvetica, sans-serif;
 }
