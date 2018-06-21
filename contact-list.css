@@ -52,8 +52,10 @@
 .contact-list-names li{
   color: #FFFFFF;
   grid-row-start: 1 / 8;
+  align-self: center;
 }
 .contact-list-emails li{
   color: #565656;
   grid-row-start: 1 / 8;
+  align-self: center;
 }
