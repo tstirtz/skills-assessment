@@ -1,17 +1,13 @@
 window.onload = function(){
-  const emailList = document.getElementsByClassName('contact-list-emails');
-  const phoneList = document.getElementsByClassName('contact-list-phone');
-  console.log(phoneList);
-  
-  emailList.onclick = function(){
-    console.log("emailList clicked");
-    
-    emailList.removeAttribute('class', 'hidden');
-    phoneList.setAttribute('class', 'hidden');
-  }
-  phoneList.onclick = function(){
-    console.log("phoneList clicked");
-    emailList.setAttribute('class', 'hidden');
-    phoneList.removeAttribute('class', 'hidden');
-  }
+  document.getElementsByTagName('select')[0].addEventListener('change', function(event){
+    if(this.value === 'phone-number'){
+      document.getElementById('contact-list-emails').className = 'hidden';
+      document.getElementById('contact-list-phones').className = 'contact-list-items';
+    }else if(this.value === 'email-address'){
+      document.getElementById('contact-list-emails').className = 'contact-list-items';
+      document.getElementById('contact-list-phones').className = 'hidden';
+    }
+  });
+
 }
+

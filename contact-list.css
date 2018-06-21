@@ -30,24 +30,21 @@
   grid-template-rows: 296px;
   box-shadow: inset 0 -2px 8px -2px;
 }
-.contact-list-names, .contact-list-emails, .contact-list-phone, .contact-list-indicators{
+.contact-list-names, .contact-list-items, .contact-list-indicators{
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(8, 37px);
   padding: 0px;
   margin: 0px;
 }
-.contact-list-names li:nth-child(even), .contact-list-emails li:nth-child(even), .contact-list-phone li:nth-child(even), .contact-list-indicators .contact-list-indicator-container:nth-child(even){
+.contact-list-names li:nth-child(even), .contact-list-items li:nth-child(even), .contact-list-phone li:nth-child(even), .contact-list-indicators .contact-list-indicator-container:nth-child(even){
   background-color: rgba(33, 33, 33, .5);
 }
 .contact-list-names{
   grid-column: 2 / 3;
   border-right: 2px solid #131313;
 }
-.contact-list-emails{
-  grid-column: 3 / 4;
-}
-.contact-list-phone{
+.contact-list-items{
   grid-column: 3 / 4;
 }
 .contact-list-indicators{
@@ -64,7 +61,7 @@
   color: #FFFFFF;
   align-self: center;
 }
-.contact-list-emails li, .contact-list-phone li{
+.contact-list-items li{
   height: 100%;
   color: #565656;
   align-self: center;
