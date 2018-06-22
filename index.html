@@ -1,145 +1,151 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Edge mode tells Internet Explorer to display content in the highest mode available -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-    <link rel="stylesheet" href="contact-list.css">
-    <script src="contact-list.js"></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <section class="contact-list">
-      <header class="contact-list-header">
-        <h4>Contacts</h4> <!-- Change tag depending on what other h tags are used in the overall project-->
-      </header>
-      <div class="contact-list-table" id="contact-list-table"><!--Would insert the contacts in via JS when returned from request-->
-        <ul class="contact-list-names">
-          <li>
-            <div class="contact-list-indicator-container">
-              <div></div>
-              <p>Christian</p>
-            </div>
-          </li>
-          <li>
-            <div class="contact-list-indicator-container">
-              <div></div>
-              <p>Rich</p>
-            </div>
-          </li>
-          <li>
-            <div class="contact-list-indicator-container">
-              <div></div>
-              <p>Scott</p>
-            </div>
-          </li>
-          <li>
-            <div class="contact-list-indicator-container">
-              <div></div>
-              <p>Danny</p>
-            </div>
-          </li>
-          <li>
-            <div class="contact-list-indicator-container">
-              <div></div>
-              <p>Taka</p>
-            </div>
-          </li>
-          <li>
-            <div class="contact-list-indicator-container">
-              <div></div>
-              <p>Tim</p>
-            </div>
-          </li>
-          <li>
-            <div class="contact-list-indicator-container">
-              <div></div>
-              <p>Patrick</p>
-            </div>
-          </li>
-          <li>
-            <div class="contact-list-indicator-container">
-              <div></div>
-              <p>Jaques</p>
-            </div>
-          </li>
-        </ul>
-        <ul class="contact-list-items" id="contact-list-emails">
-          <li>
-            <p>christian@yahoo.com</p>
-          </li>
-          <li>
-            <p>rich@tripod.com</p>
-          </li>
-          <li>
-            <p>scott@mailinator.com</p>
-            <div class="overlay">
-              <div class="contact-info">
-                <div class="contact-info-top">
-                  <div class="contact-list-indicator-container">
-                      <div></div>
-                      <p>Scott</p>
-                  </div>
-                  <p>scott@mailinator.com</p>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Edge mode tells Internet Explorer to display content in the highest mode available -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+  <link rel="stylesheet" href="contact-list.css">
+  <script src="contact-list.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="contact-list">
+    <header class="contact-list-header">
+      <h4>Contacts</h4>
+      <!-- Change tag depending on what other h tags are used in the overall project-->
+    </header>
+    <div class="contact-list-table" id="contact-list-table">
+      <!--Would insert the contacts in via JS when returned from request-->
+      <ul class="contact-list-names">
+        <li>
+          <div class="contact-list-indicator-container">
+            <div></div>
+            <p>Christian</p>
+          </div>
+        </li>
+        <li>
+          <div class="contact-list-indicator-container">
+            <div></div>
+            <p>Rich</p>
+          </div>
+        </li>
+        <li>
+          <div class="contact-list-indicator-container">
+            <div></div>
+            <p>Scott</p>
+          </div>
+        </li>
+        <li>
+          <div class="contact-list-indicator-container">
+            <div></div>
+            <p>Danny</p>
+          </div>
+        </li>
+        <li>
+          <div class="contact-list-indicator-container">
+            <div></div>
+            <p>Taka</p>
+          </div>
+        </li>
+        <li>
+          <div class="contact-list-indicator-container">
+            <div></div>
+            <p>Tim</p>
+          </div>
+        </li>
+        <li>
+          <div class="contact-list-indicator-container">
+            <div></div>
+            <p>Patrick</p>
+          </div>
+        </li>
+        <li>
+          <div class="contact-list-indicator-container">
+            <div></div>
+            <p>Jaques</p>
+          </div>
+        </li>
+      </ul>
+      <ul class="contact-list-items" id="contact-list-emails">
+        <li>
+          <p>christian@yahoo.com</p>
+        </li>
+        <li>
+          <p>rich@tripod.com</p>
+        </li>
+        <li>
+          <p>scott@mailinator.com</p>
+          <div class="overlay">
+            <div class="contact-info">
+              <div class="contact-info-top">
+                <div class="contact-list-indicator-container">
+                  <div></div>
+                  <p>Scott</p>
                 </div>
-                <div class="contact-info-address">
-                  <p>555.555.5555</p>
-                  <p>6539 Wilton Ave.</p>
-                  <p>Culver City CA 90234</p>
-                </div>
+                <p>scott@mailinator.com</p>
+              </div>
+              <div class="contact-info-address">
+                <p>555.555.5555</p>
+                <p>6539 Wilton Ave.</p>
+                <p>Culver City CA 90234</p>
               </div>
             </div>
-          </li>
-          <li>
-            <p>danny@hotmail.com</p>
-          </li>
-          <li>
-            <p>taka@myspace.com</p>
-          </li>
-          <li>
-            <p>tim@netscape.com</p>
-          </li>
-          <li>
-            <p>patrick@live.com</p>
-          </li>
-          <li>
-            <p>jaques@aol.com</p>
-          </li>
-        </ul>
-        <ul class="hidden" id="contact-list-phones">
-            <li>
-              <p>323-555-1234</p>
-            </li>
-            <li>
-              <p>323-555-1234</p>
-            </li>
-            <li>
-              <p>323-555-1234</p>
-            </li>
-            <li>
-              <p>323-555-1234</p>
-            </li>
-            <li>
-              <p>323-555-1234</p>
-            </li>
-            <li>
-              <p>323-555-1234</p>
-            </li>
-            <li>
-              <p>323-555-1234</p>
-            </li>
-            <li>
-              <p>323-555-1234</p>
-            </li>
-          </ul>
-      </div>
-      <div class="contact-list-select">
-        <select name="contact-type">
-            <option value="email-address"  id="email-select">Email address</option>
-            <option value="phone-number" id="phone-number-select">Phone number</option>
-          </select>
-      </div>
-    </section>
-  </body>
-  </html>
+          </div>
+        </li>
+        <li>
+          <p>danny@hotmail.com</p>
+        </li>
+        <li>
+          <p>taka@myspace.com</p>
+        </li>
+        <li>
+          <p>tim@netscape.com</p>
+        </li>
+        <li>
+          <p>patrick@live.com</p>
+        </li>
+        <li>
+          <p>jaques@aol.com</p>
+        </li>
+      </ul>
+      <ul class="hidden" id="contact-list-phones">
+        <li>
+          <p>323-555-1234</p>
+        </li>
+        <li>
+          <p>323-555-1234</p>
+        </li>
+        <li>
+          <p>323-555-1234</p>
+        </li>
+        <li>
+          <p>323-555-1234</p>
+        </li>
+        <li>
+          <p>323-555-1234</p>
+        </li>
+        <li>
+          <p>323-555-1234</p>
+        </li>
+        <li>
+          <p>323-555-1234</p>
+        </li>
+        <li>
+          <p>323-555-1234</p>
+        </li>
+      </ul>
+    </div>
+    <div class="contact-list-select">
+      <select name="contact-type">
+        <option value="email-address" id="email-select">Email address</option>
+        <option value="phone-number" id="phone-number-select">Phone number</option>
+      </select>
+    </div>
+  </section>
+</body>
+
+</html>

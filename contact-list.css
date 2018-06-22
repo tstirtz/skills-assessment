@@ -1,7 +1,7 @@
-*{
+* {
   box-sizing: border-box;
 }
-.contact-list{
+.contact-list {
   margin: 25px;
   height: 395px;
   width: 285px;
@@ -9,16 +9,20 @@
   border: 2px solid #343434;
   border-radius: 10px;
 }
-.contact-list-header{
+.contact-list-header {
   width: 100%;
   height: 50px;
-  background: rgba(68, 68, 68, .5);
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.21) 0%, rgba(255,255,255,0.21) 100%);
+  background: rgba(68, 68, 68, 0.5);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.21) 0%,
+    rgba(255, 255, 255, 0.21) 100%
+  );
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom: 2px solid black;
 }
-.contact-list-header > h4{
+.contact-list-header > h4 {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -26,74 +30,81 @@
   padding: 21px 0px 0px 18px;
   margin: 0px;
 }
-.contact-list-table{
+.contact-list-table {
   position: relative;
   width: 100%;
   display: grid;
   grid-template-columns: 108px 173px;
   grid-template-rows: 296px;
 }
-.contact-list-names, .contact-list-items{
+.contact-list-names,
+.contact-list-items {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(8, 37px);
   padding: 0px;
   margin: 0px;
 }
-.contact-list-names li:nth-child(even), .contact-list-items li:nth-child(even), .contact-list-phone li:nth-child(even), .contact-list-indicators .contact-list-indicator-container:nth-child(even){
-  background-color: rgba(33, 33, 33, .5);
+.contact-list-names li:nth-child(even),
+.contact-list-items li:nth-child(even),
+.contact-list-phone li:nth-child(even),
+.contact-list-indicators .contact-list-indicator-container:nth-child(even) {
+  background-color: rgba(33, 33, 33, 0.5);
 }
-.contact-list-names li:nth-child(odd), .contact-list-items li:nth-child(odd), .contact-list-phone li:nth-child(odd), .contact-list-indicators .contact-list-indicator-container:nth-child(odd){
+.contact-list-names li:nth-child(odd),
+.contact-list-items li:nth-child(odd),
+.contact-list-phone li:nth-child(odd),
+.contact-list-indicators .contact-list-indicator-container:nth-child(odd) {
   background-color: rgb(33, 33, 33);
 }
-.contact-list-names{
+.contact-list-names {
   grid-column: 1 / 2;
   border-right: 1px solid #131313;
 }
-.contact-list-items{
+.contact-list-items {
   grid-column: 2 / 3;
 }
-.contact-list-table li{
+.contact-list-table li {
   font-family: Helvetica, sans-serif;
   font-size: 12px;
   list-style-type: none;
   padding: 0px;
 }
-.contact-list-names li{
+.contact-list-names li {
   height: 100%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.contact-list-items li{
+.contact-list-items li {
   height: 100%;
   color: #565656;
   align-self: center;
   padding-left: 16px;
 }
-.contact-list-indicator-container{
+.contact-list-indicator-container {
   display: flex;
   align-items: center;
   height: 100%;
 }
-.contact-list-indicator-container div{
+.contact-list-indicator-container div {
   height: 15px;
   width: 15px;
   margin-left: 16px;
-  background: #00FF1E;
+  background: #00ff1e;
   border-radius: 10px;
 }
-.contact-list-indicator-container p{
+.contact-list-indicator-container p {
   margin-left: 10px;
 }
-.contact-list-names li:nth-child(5) > .contact-list-indicator-container div{
-  background: #FF0000;
+.contact-list-names li:nth-child(5) > .contact-list-indicator-container div {
+  background: #ff0000;
 }
 .contact-list-names li:nth-child(6) > .contact-list-indicator-container div {
-  background: #C3C118;
+  background: #c3c118;
 }
-.contact-list-names li:nth-child(8) > .contact-list-indicator-container div{
-  background: #FFFC00;
+.contact-list-names li:nth-child(8) > .contact-list-indicator-container div {
+  background: #fffc00;
 }
-.overlay{
+.overlay {
   display: none;
   position: absolute;
   top: 0px;
@@ -101,67 +112,67 @@
   width: 281px;
   height: 296px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-  color: #FFFFFF;
+  color: #ffffff;
   z-index: 0;
 }
-.contact-list-items li:nth-child(3):hover .overlay{ 
+.contact-list-items li:nth-child(3):hover .overlay {
   display: block;
 }
-.contact-info{
+.contact-info {
   position: relative;
   top: 75px;
 }
-.contact-info-top{
+.contact-info-top {
   display: grid;
   grid-template-columns: 108px 173px;
   height: 37px;
   background-color: #484848;
   align-items: center;
 }
-.contact-info-top > p{
+.contact-info-top > p {
   grid-column: 2 / 3;
   margin: 0px 0px 0px 16px;
 }
-.contact-info-top > p{
+.contact-info-top > p {
   text-decoration: underline;
-  color: #00F6FF;
+  color: #00f6ff;
 }
-.contact-info-address{
+.contact-info-address {
   position: absolute;
   right: 0px;
   width: 173px;
   margin: 0px;
   background-color: #484848;
 }
-.contact-info-address p{
+.contact-info-address p {
   margin: 0px;
   color: white;
   margin: 0px 0px 0px 16px;
 }
-.contact-info-address p:first-child{
+.contact-info-address p:first-child {
   margin-bottom: 14px;
 }
-.contact-info-address p:last-child{
+.contact-info-address p:last-child {
   margin-bottom: 15px;
 }
-.contact-list-select{
+.contact-list-select {
   display: flex;
   height: 47px;
   justify-content: flex-end;
   align-items: center;
-  background-color: #2C2C2C;
+  background-color: #2c2c2c;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background:rgba(44, 44, 44, .5);
-  box-shadow: 0 -5px 5px 0 rgba(0,0,0,0.75);
+  background: rgba(44, 44, 44, 0.5);
+  box-shadow: 0 -5px 5px 0 rgba(0, 0, 0, 0.75);
 }
-.contact-list-select select{
+.contact-list-select select {
   height: 16px;
   width: 107px;
   margin-right: 18px;
   font-size: 12px;
   font-family: Helvetica, sans-serif;
 }
-.hidden{
+.hidden {
   display: none;
 }
