@@ -8,6 +8,5 @@ window.onload = function(){
       document.getElementById('contact-list-phones').className = 'hidden';
     }
   });
-
 }
 
