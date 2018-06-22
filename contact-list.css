@@ -102,10 +102,6 @@
   height: 296px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
-.contact-list-items li:nth-child(3):hover{
-  z-index: 2;
-  background-color: #484848;
-}
 .contact-list-items li:nth-child(3):hover .overlay{ 
   display: block;
   color: #FFFFFF;
